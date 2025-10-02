@@ -9,19 +9,19 @@ const menuData = {
             name: "Buchada",
             price: "R$ 44,99",
             ingredients: "Carne de bode, Alho, Batatas Fritas",
-            image: "./img/buchada.jpeg" // Coloque o caminho da imagem aqui
+            image: "img/buchada.jpeg" // Coloque o caminho da imagem aqui
         },
         {
             name: "Arroz Guisado",
             price: "R$ 31,99",
             ingredients: "Carne de bode, Alho, Batatas Fritas",
-            image: "./img/arrozguisado.jpg" // Deixe em branco se não houver imagem
+            image: "img/arrozguisado.jpg" // Deixe em branco se não houver imagem
         },
         {
             name: "Galinha Caipira",
             price: "39,99", // O R$ será adicionado automaticamente
             ingredients: "Carne de bode, Alho, Batatas Fritas",
-            image: "./img/galinhacaipira.jpeg"
+            image: "img/galinhacaipira.jpeg"
         }
     ],
     drinks: [
@@ -29,19 +29,19 @@ const menuData = {
             name: "Red Bull 250ml",
             price: "9,99",
             ingredients: "", // Sem ingredientes para bebidas
-            image: "./img/redbull.jpeg"
+            image: "img/redbull.jpeg"
         },
         {
             name: "Coca Cola Lata 250ml",
             price: "R$ 5,99",
             ingredients: "",
-            image: "./img/coca.jpg"
+            image: "img/coca.jpg"
         },
         {
             name: "Heineken Long Neck 330ml",
             price: "8,99",
             ingredients: "",
-            image: "./img/heineken ln.jpg"
+            image: "img/heineken ln.jpg"
         }
     ]
 };
