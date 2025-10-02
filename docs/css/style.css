@@ -36,6 +36,26 @@ body {
     color: #aaa;
 }
 
+/* ---- ESTILOS DO RODAPÉ COM LINKS ---- */
+.footer-links {
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    align-items: center;
+    gap: 30px; /* Espaçamento entre os botões */
+    margin-bottom: 1rem;
+    padding-top: 1rem; /* Adiciona um espaço acima dos links */
+}
+
+.footer-links a img {
+    width: 70px; /* Tamanho dos ícones */
+    height: auto; /* Mantém a proporção da imagem */
+    transition: transform 0.2s ease-in-out;
+}
+
+.footer-links a:hover img {
+    transform: scale(1.15); /* Efeito de zoom ao passar o mouse */
+}
+
 /* Títulos */
 h1 {
     font-size: 2.5rem;

@@ -4,6 +4,10 @@
 
 const menuData = {
     restaurantName: "Restaurante Exemplo",
+
+    ifoodUrl: "https://www.ifood.com.br/link-do-seu-restaurante",
+    mapsUrl: "http://googleusercontent.com/maps.google.com/3",
+    
     foods: [
         {
             name: "Buchada",
@@ -41,7 +45,7 @@ const menuData = {
             name: "Heineken Long Neck 330ml",
             price: "8,99",
             ingredients: "",
-            image: "img/heineken ln.jpg"
+            image: "img/heineken_ln.jpg"
         }
     ]
 };
@@ -56,11 +60,25 @@ document.addEventListener('DOMContentLoaded', function() {
     const restaurantNameHeader = document.getElementById('restaurant-name-header');
     const restaurantNameFooter = document.getElementById('restaurant-name-footer');
     const pageTitle = document.querySelector('title');
+    const ifoodLink = document.getElementById('ifood-link');
+    const mapsLink = document.getElementById('maps-link');
 
     // Atualiza o nome do restaurante
     restaurantNameHeader.textContent = menuData.restaurantName;
     restaurantNameFooter.textContent = menuData.restaurantName;
     pageTitle.textContent = `Cardápio - ${menuData.restaurantName}`;
+
+    if (menuData.ifoodUrl) {
+        ifoodLink.href = menuData.ifoodUrl;
+    } else {
+        ifoodLink.style.display = 'none';
+    }
+
+    if (menuData.mapsUrl) {
+        mapsLink.href = menuData.mapsUrl;
+    } else {
+        mapsLink.style.display = 'none';
+    }
 
     // Função para criar o HTML de um item do menu
     function createMenuItemHTML(item) {
